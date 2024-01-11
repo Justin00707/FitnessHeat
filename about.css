@@ -1,0 +1,79 @@
+/* about.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* Adding a simple fade-in animation */
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 24px;
+}
+
+nav a {
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    /* Adding a hover effect */
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: red; /* Change color on hover */
+}
+
+.header-buttons button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header-buttons button:hover {
+    background-color: #333333; /* Darker on hover */
+}
+
+/* Content specific to about.html */
+.content-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.content-section h1, .content-section p, .content-section ul {
+    /* Animation for each content section */
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Keyframes for slideUp animation */
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
